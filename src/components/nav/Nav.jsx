@@ -6,7 +6,7 @@ const Root = () => {
       <nav className="navbar navbar-expand-lg bg-body-tertiary">
         <div className="container-fluid">
           <a className="navbar-brand" href="#">
-            Syed Ali Rizvi
+            POSTPULSE✒️
           </a>
           <button
             className="navbar-toggler"
@@ -33,9 +33,10 @@ const Root = () => {
               </li>
               <li className="nav-item">
                 <Link className="nav-link active" to="/signup">
-                  Signup
+                  JOIN
                 </Link>
               </li>
+              
 
             </ul>
           </div>

@@ -19,6 +19,7 @@ import Home from './components/HomePage/Home';
 import Business from './components/businessManagement-K/Bmanagment';
 import Nav from './components/nav/Nav';
 import Signup from './components/signup-KT/Signup';
+// import Login from './components/login-A/Login'
 
 const routes = createBrowserRouter([
   {
@@ -36,6 +37,7 @@ const routes = createBrowserRouter([
       {
         path: 'signup',
         element: <Signup />,
+        
       }
       
     ],
