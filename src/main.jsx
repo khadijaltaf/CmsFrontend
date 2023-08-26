@@ -18,19 +18,24 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Home from './components/HomePage/Home';
 import Business from './components/businessManagement-K/Bmanagment';
 import Nav from './components/nav/Nav';
-;
+import Signup from './components/signup-KT/Signup';
+
 const routes = createBrowserRouter([
   {
     path: '/',
     element: <Nav />,
     children: [
       {
-        path: '',
+        path: '/',
         element: <Home />,
       },
       {
-        path: 'aboutme',
+        path: 'business',
         element: <Business />,
+      },
+      {
+        path: 'signup',
+        element: <Signup />,
       }
       
     ],
