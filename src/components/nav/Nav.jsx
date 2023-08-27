@@ -1,6 +1,7 @@
 import { Link, Outlet } from 'react-router-dom';
+import './Nav.css'
 
-const Root = () => {
+const Nav = () => {
   return (
     <>
       <nav className="navbar navbar-expand-lg bg-body-tertiary">
@@ -28,7 +29,7 @@ const Root = () => {
               </li>
               <li className="nav-item">
                 <Link className="nav-link active" to="/business">
-                  About Me
+                  Business Page
                 </Link>
               </li>
               <li className="nav-item">
@@ -49,4 +50,4 @@ const Root = () => {
   );
 };
 
-export default Root;
+export default Nav;

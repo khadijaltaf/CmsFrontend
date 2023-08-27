@@ -1,16 +1,3 @@
-// import React from 'react'
-// import ReactDOM from 'react-dom/client'
-// import App from './App.jsx'
-// import './index.css'
-// import { BrowserRouter } from 'react-router-dom'
-
-// ReactDOM.createRoot(document.getElementById('root')).render(
-//   <BrowserRouter>
-//   <React.StrictMode>
-//     <App />
-//   </React.StrictMode>
-//   </BrowserRouter>
-// )
 
 import React from 'react';
 import ReactDOM from 'react-dom/client';
@@ -19,7 +6,7 @@ import Home from './components/HomePage/Home';
 import Business from './components/businessManagement-K/Bmanagment';
 import Nav from './components/nav/Nav';
 import Signup from './components/signup-KT/Signup';
-// import Login from './components/login-A/Login'
+import Login from './components/login-A/Login';
 
 const routes = createBrowserRouter([
   {
@@ -37,7 +24,12 @@ const routes = createBrowserRouter([
       {
         path: 'signup',
         element: <Signup />,
-        
+        children: [
+          {
+            path: 'login',
+            element: <Login />,
+          },
+        ],
       }
       
     ],
